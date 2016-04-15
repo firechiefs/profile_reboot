@@ -12,6 +12,14 @@ profile::reboot::disable_pending_reboot: true
 puppet module install puppetlabs-reboot
 
 ## USAGE:
+
+For installation, include this in your Puppetfile:
+```
+mod 'profile_reboot',
+  :git => 'https://github.com/firechiefs/profile_reboot',
+  :ref => 'n.n.n'
+```
+usage in manifests:
 ```
 class role::*rolename* {
   include profile_reboot
