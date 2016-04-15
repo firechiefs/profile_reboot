@@ -15,9 +15,11 @@ puppet module install puppetlabs-reboot
 
 For installation, include this in your Puppetfile:
 ```
+mod "puppetlabs-reboot",     '1.2.1'
+
 mod 'profile_reboot',
   :git => 'https://github.com/firechiefs/profile_reboot',
-  :ref => 'n.n.n'
+  :ref => '1.0.0'
 ```
 usage in manifests:
 ```
